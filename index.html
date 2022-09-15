@@ -172,54 +172,129 @@
 	      
 	      
 	      
-<!-- Selected Project -->				
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-          <tr>
-            <td>
-              <heading>Misc</heading>
-            </td>
-          </tr>
-        </tbody></table>
-        <table width="100%" align="center" border="0" cellpadding="20"><tbody>
-					
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/cvf.jpg"></td>
-            <td width="75%" valign="center">
-              <a href="https://cvpr2022.thecvf.com/area-chairs">Area Chair, CVPR 2022</a>
-              <br>
-              <a href="http://cvpr2021.thecvf.com/area-chairs">Area Chair & Longuet-Higgins Award Committee Member, CVPR 2021</a>
-              <br>
-              <a href="http://cvpr2019.thecvf.com/area_chairs">Area Chair, CVPR 2019</a>
-              <br>
-              <a href="http://cvpr2018.thecvf.com/organizers/area_chairs">Area Chair, CVPR 2018</a>
-            </td>
-          </tr>
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/cs188.jpg" alt="cs188">
-            </td>
-            <td width="75%" valign="center">
-              <a href="http://inst.eecs.berkeley.edu/~cs188/sp11/announcements.html">Graduate Student Instructor, CS188 Spring 2011</a>
-              <br>
-              <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">Graduate Student Instructor, CS188 Fall 2010</a>
-              <br>
-              <a href="http://aima.cs.berkeley.edu/">Figures, "Artificial Intelligence: A Modern Approach", 3rd Edition</a>
-            </td>
-          </tr>
-					
+      <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tr>
+        <td>
+        <heading>Selected Projects</heading>
+        </td>
+      </tr>
+      </table> -->
+      <table width="100%" align="center" border="0" cellpadding="20">
+        <heading>Selected Projects</heading>
+    <tr onmouseout="dna_stop()" onmouseover="dna_start()">
+      <td width="25%">
+        <div class="one">
+        <div align="center" class="two" id='dna_gif'><img src='media/OMG_logo.png' width="150" height="80"></div>
+        <div align="center" class="two" id='dna_image'><img src='media/OMG_logo.png' width="150" height="80"></div>
+        </div>
+        <script type="text/javascript">
+        function dna_start() {
+        document.getElementById('dna_gif').style.opacity = "1";
+        }
+        function dna_stop() {
+        document.getElementById('dna_gif').style.opacity = "0";
+        }
+        dna_stop()
+        </script>
+      </td>
+        <!--<td width="25%"><img src="media/gwas.png" alt="GWAS image from https://upload.wikimedia.org/wikipedia/commons/5/59/GWAS_loci_influencing_human_facial_and_scalp_hair_phenotypes_-_cropped.png" width="160" height="160"></td>-->
+      <!--<tr>
+        <td width="25%"><img src="media/benedict_1.png" alt="benedict-otter-look-a-like" width="160" height="160"></td>-->
+        <td width="75%" valign="top">
+        <p>
+          <a href="https://github.com/PaolaArdon/Salt-Pepper">
+          <papertitle>A Deep Network for Arousal-Valence Emotion Prediction with Acoustic-Visual Cues</papertitle>
+          </a>
+          <br>
+          <strong>Songyou Peng</strong>, <a href="https://zhangleuestc.github.io">Le Zhang</a>, <a href="https://team.inria.fr/perception/team-members/yutong-ban/">Yutong Ban</a>, <a href="http://people.eng.unimelb.edu.au/mengf1/">Meng Fang</a>, <a href="stefan.winkler.site">Stefan Winkler</a>
+          <br>
+    	  <em>IJCNN One-Minute Gradual (OMG) Emotion Behavior Challenge</em>, 2018<br>
+          <a href="https://www2.informatik.uni-hamburg.de/wtm/omgchallenges/omg_emotion2018_results2018.html">leaderboard</a> |
+      	  <a href="https://arxiv.org/abs/1805.00638">arxiv</a> |
+          <a href="https://github.com/pengsongyou/OMG-ADSC">code</a>
+          <p></p>
+          <p></p>
 
+           <strong>1st</strong> for vision-only arousal/valence prediction and <strong>2nd</strong> for overall valence prediction. </a>
+        </p>
+        </p>
+        </td>
+      </tr>
+    <tr onmouseout="pepper_stop()" onmouseover="pepper_start()">
+      <td width="25%">
+        <div class="one">
+        <div class="two" id = 'pepper_gif'><img src='media/pepper_robot.gif' width="160" height="120"></div>
+        <img src='media/pepper_pic.jpg' width="160" height="120">
+        </div>
+        <script type="text/javascript">
+        function pepper_start() {
+        document.getElementById('pepper_gif').style.opacity = "1";
+        }
+        function pepper_stop() {
+        document.getElementById('pepper_gif').style.opacity = "0";
+        }
+        pepper_stop()
+        </script>
+        </script>
+      </td>
+        <!--<td width="25%"><img src="media/gwas.png" alt="GWAS image from https://upload.wikimedia.org/wikipedia/commons/5/59/GWAS_loci_influencing_human_facial_and_scalp_hair_phenotypes_-_cropped.png" width="160" height="160"></td>-->
+      <!--<tr>
+        <td width="25%"><img src="media/benedict_1.png" alt="benedict-otter-look-a-like" width="160" height="160"></td>-->
+        <td width="75%" valign="top">
+        <p>
+          <a href="https://github.com/PaolaArdon/Salt-Pepper">
+          <papertitle>A Hybrid SLAM and Object Recognition System for Pepper Robot</papertitle>
+          </a>
+          <br>
+          <strong>Songyou Peng*</strong>, <a href="https://kz.linkedin.com/in/kushibar">Kaisar Kushibar*</a>, <a href="https://www.edinburgh-robotics.org/students/paola-ardon-ramirez">Paola Ardon*</a>
+          <br>
+    	  <em>VIBOT Robotics Project</em>, 2016<br>
+    	  <a href="https://arxiv.org/abs/1903.00675">arxiv</a> |
+          <a href="https://www.youtube.com/watch?v=evFsnWH_bpY">video</a> |
+          <a href="https://github.com/pengsongyou/msc-thesis">code</a>
+          <p></p>
+          <p></p>
+          Apply visual SLAM on the Pepper robot along with object recognition.</a>
+        </p>
+        </p>
+        </td>
+      </tr>
+      </table>
+      
+      <!-- Teaching -->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <heading>Teaching</heading>
           <tr>
-            <td align="center" style="padding:20px;width:25%;vertical-align:middle">
-							<heading>Basically <br> Blog Posts</heading>
+            <td style="padding:0px;width:25%;vertical-align:middle">
+              <img src="media/eth_logo.png" width="180">
             </td>
-            <td width="75%" valign="middle">
-              <a href="https://arxiv.org/abs/2112.11687">Squareplus: A Softplus-Like Algebraic Rectifier</a>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+              Teaching Assistant (Lead), <a href="https://www.cvg.ethz.ch/teaching/3dvision/"><strong>3D Vision</strong></a>, Spring 2022
               <br>
-              <a href="https://arxiv.org/abs/2010.09714">A Convenient Generalization of Schlick's Bias and Gain Functions</a>
+              Teaching Assistant, <a href="https://www.cvg.ethz.ch/teaching/dlseminar/"><strong>Deep Learning for Computer Vision: Seminal Work</strong></a>, Spring 2022
               <br>
-              <a href="https://arxiv.org/abs/1704.07483">Continuously Differentiable Exponential Linear Units</a>
+              Teaching Assistant, <a href="https://www.cvg.ethz.ch/teaching/3dvision/2020/index.php"><strong>3D Vision</strong></a>, Spring 2020
+              <br>
+              Teaching Assistant, <a href="https://www.cvg.ethz.ch/teaching/dlseminar/2020/"><strong>Deep Learning for Computer Vision: Seminal Work</strong></a>, Spring 2020
+              <br>
             </td>
           </tr>
+        </table>
+        <br>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:0px;width:25%;vertical-align:middle">
+              <img src="media/tue_logo.png" width="180">
+            </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+              Teaching Assistant, <a href="https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/autonomous-vision/lectures/deep-learning/"><strong>Deep Learning</strong></a>, Winter 2020/2021
+              <br>
+            </td>
+          </tr>
+        </table>
+      <br>
+      <br>
+      <br>
 					
 					
         </tbody></table>
