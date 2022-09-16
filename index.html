@@ -254,6 +254,30 @@
 
 
 
+      <tr onmouseout="sam_stop()" onmouseover="sam_start()">  
+      <td width="25%">
+        <div class="one">
+        <div class="two" id = 'sam_shape'>
+        <video  width="160" height="160" muted autoplay loop>
+            <source src="images/samsung-proj3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video></div>
+        <img src='images/samsung-proj1.png' width="160" height="160"></div>
+        <script type="text/javascript">
+        function sap_start() { 
+        document.getElementById('sam_shape').style.opacity = "1";
+        }
+        function sap_stop() { 
+        document.getElementById('sam_shape').style.opacity = "0"; 
+        }
+  sap_stop()
+        </script>
+        </script>
+      </td>
+
+
+
+<!--
 <tr onmouseout="dist_stop()" onmouseover="dist_start()"> 
       <td width="25%">
         <div class="one">
@@ -272,6 +296,7 @@
         </script>
         </script>
       </td>
+-->
         <!--<td width="25%"><img src="media/gwas.png" alt="GWAS image from https://upload.wikimedia.org/wikipedia/commons/5/59/GWAS_loci_influencing_human_facial_and_scalp_hair_phenotypes_-_cropped.png" width="160" height="160"></td>-->
       <!--<tr>
         <td width="25%"><img src="media/benedict_1.png" alt="benedict-otter-look-a-like" width="160" height="160"></td>-->
