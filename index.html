@@ -80,18 +80,26 @@
 	      
 
 	<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20" >
-        <tr onmouseout="mono_stop()" onmouseover="mono_start()">  
-          <td width="25%">      
-	      
-	      
-<!--	      
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr onmouseout="malle_stop()" onmouseover="malle_start()">
-            <td style="padding:50px;width:25%;vertical-align:middle">
--->
-		    		      <!-- original padding ="20" soon modified -->
+    <tr onmouseout="pond_stop()" onmouseover="pond_start()">  
+      <td width="25%">
+        <div class="one">
+        <div class="two" id = 'pond_shape'>
+        <img src='images/aaai-2023/loss.png' width="150" height="150"></div>
+        <img src='images/aaai-2023/teaser3.png' width="150" height="150"></div>
+        </div>
+        <script type="text/javascript">
+        function unisurf_start() { 
+        document.getElementById('pond_shape').style.opacity = "1";
+        }
+        function unisurf_stop() { 
+        document.getElementById('pond_shape').style.opacity = "0"; 
+        }
+        pond_stop()
+        </script>
+        </script>
+      </td>
               
-		<div class="one">
+<!-- 		<div class="one">
                 <div class="two" id='ff_image'>
 			<center><img src='images/aaai-2023/loss.png' width="150" height="150"></center></div>
 		      <center><img src='images/aaai-2023/teaser3.png' width="150" height="150"></center>
@@ -105,7 +113,7 @@
                   document.getElementById('ff_image').style.opacity = "0";
                 }
                 ff_stop()
-              </script>
+              </script> -->
 		  
 <!-- 		  <div class="one">
                 <div class="two" id='malle_image'>
@@ -124,7 +132,7 @@
                 malle_stop()
               </script>
 		--> 
-            </td>
+<!--             </td> -->
 		
 	    <td valign="top" width="75%">
                 <papertitle> Pose-guided 3D Human Generation in Indoor Scene </papertitle>
