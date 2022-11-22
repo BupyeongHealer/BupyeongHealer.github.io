@@ -47,9 +47,10 @@
     <div class="container" id="main">
         <div class="row">
             <h2 class="col-md-12 text-center">
-                <b>Mip-NeRF 360</b>: Unbounded <br> Anti-Aliased Neural Radiance Fields</br> 
+<!--                 <b>Mip-NeRF 360</b>: Unbounded <br> Anti-Aliased Neural Radiance Fields</br>  -->
+		    Pose-guided 3D Human Generation in Indoor Scene
                 <small>
-								CVPR 2022 (Oral Presentation)
+								AAAI 2023
                 </small>
             </h2>
         </div>
@@ -57,10 +58,10 @@
             <div class="col-md-12 text-center">
                 <ul class="list-inline">
                     <li>
-                        <a href="https://jonbarron.info/">
-                          Jonathan T. Barron
+                        <a href="https://bupyeonghealer.github.io/">
+                          Minseok Kim
                         </a>
-                        </br>Google
+                        </br>UNIST
                     </li>
                     <li>
                         <a href="http://bmild.github.io/">
@@ -132,7 +133,7 @@
 						</div>
             <div class="col-md-8 col-md-offset-2">
 							<p class="text-center">
-							Rendered images and depths from our model.
+								Results on the <em>unseen MP3D-R</em> data.
 							</p>
 						</div>
         </div>
@@ -144,7 +145,13 @@
                     Abstract
                 </h3>
                 <p class="text-justify">
-Though neural radiance fields (NeRF) have demonstrated impressive view synthesis results on objects and small bounded regions of space, they struggle on "unbounded" scenes, where the camera may point in any direction and content may exist at any distance. In this setting, existing NeRF-like models often produce blurry or low-resolution renderings (due to the unbalanced detail and scale of nearby and distant objects), are slow to train, and may exhibit artifacts due to the inherent ambiguity of the task of reconstructing a large scene from a small set of images. We present an extension of mip-NeRF (a NeRF variant that addresses sampling and aliasing) that uses a non-linear scene parameterization, online distillation, and a novel distortion-based regularizer to overcome the challenges presented by unbounded scenes. Our model, which we dub "mip-NeRF 360" as we target scenes in which the camera rotates 360 degrees around a point, reduces mean-squared error by 54% compared to mip-NeRF, and is able to produce realistic synthesized views and detailed depth maps for highly intricate, unbounded real-world scenes.
+		In this work, we address the problem of scene-aware 3D human avatar generation based on human-scene interactions.
+In particular, we pay attention to the fact that physical contact between 3D human and scene (<em>i.e., physical human-scene interactions</em>) requires geometrically aligned for natural 3D human avatar generation.
+Motivated by this fact, we present a new 3D human generation framework that considers geometric alignment on potential contact areas between 3D human avatars and their surroundings.
+In addition, we introduce a compact yet effective human pose classifier that classifies the human pose and provides potential contact areas of the 3D human avatar. 
+It allows us to adaptively use geometric alignment loss according to the classified human pose.
+Compared to the state-of-the-art method, our method can generate physically and semantically plausible 3D humans that interact naturally with 3D scenes without additional post-processing.
+In our evaluations, we achieve the improvements with more plausible interactions and more variety of poses than prior research in qualitative and quantitative analysis.
                 </p>
             </div>
         </div>
@@ -157,15 +164,16 @@ Though neural radiance fields (NeRF) have demonstrated impressive view synthesis
                     Video
                 </h3>
                 <div class="text-center">
-                    <div style="position:relative;padding-top:56.25%;">
-                        <iframe src="https://youtube.com/embed/zBSH-k9GbV4" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+			coming soon!
+<!--                     <div style="position:relative;padding-top:56.25%;"> -->
+<!--                         <iframe src="https://youtube.com/embed/zBSH-k9GbV4" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe> -->
                     </div>
                 </div>
             </div>
         </div>
 
             
-        <div class="row">
+<!--         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
                     Citation
@@ -181,7 +189,7 @@ Though neural radiance fields (NeRF) have demonstrated impressive view synthesis
 }</textarea>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
@@ -189,7 +197,8 @@ Though neural radiance fields (NeRF) have demonstrated impressive view synthesis
                     Acknowledgements
                 </h3>
                 <p class="text-justify">
-                Thanks to Ricardo Martin-Brualla and David Salesin for their comments on the text, and to George Drettakis and Georgios Kopanas for graciously assisting us with our baseline evaluation.
+                This work was supported by Institute of Information \& communications Technology Planning \& Evaluation(IITP) grant funded by the Korea government(MSIT)
+(No.2020-0-01336, Artificial Intelligence Graduate School Program(UNIST)).
                     <br>
                 The website template was borrowed from <a href="http://mgharbi.com/">Michaël Gharbi</a>.
                 </p>
