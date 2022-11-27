@@ -158,10 +158,10 @@ span.highlight {
 	margin-right: 0.5em;
 }
 
-}
 .realistic-marker-highlight{
   position:relative;
 }
+
 .realistic-marker-highlight:before{
   content:"";
   background-color:#8a05e3;
