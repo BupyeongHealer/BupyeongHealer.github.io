@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coaster</title>
+<meta name="description" content="술자리를 기록하는 앱. 병으로 시켜 나눠 마셨을 때 내 몫만 계산합니다.">
+<style>
+  :root {
+    --bg:#131110; --sur:#1D1A18; --line:#2F2A27;
+    --tx:#F3F0EE; --tx2:#A9A39F; --tx3:#837D79; --acc:#D3816B;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin:0 auto; padding:56px 20px 96px; max-width:680px;
+    background:var(--bg); color:var(--tx);
+    font-family:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+    line-height:1.75; -webkit-font-smoothing:antialiased;
+  }
+  .mark { display:flex; align-items:center; gap:10px; margin-bottom:28px; }
+  .dot { width:26px; height:26px; border-radius:50%; border:3px solid var(--acc); }
+  .mark b { font-size:17px; letter-spacing:-.01em; }
+  h1 { font-size:32px; line-height:1.2; letter-spacing:-.035em; margin:0 0 14px; font-weight:800; }
+  .lead { color:var(--tx2); font-size:17px; margin:0 0 44px; }
+  h2 { font-size:17px; margin:44px 0 10px; font-weight:700; }
+  p { color:var(--tx2); margin:0 0 14px; }
+  ul { color:var(--tx2); padding-left:20px; margin:0 0 14px; }
+  li { margin:6px 0; }
+  a { color:var(--acc); }
+  .card { background:var(--sur); border-radius:10px; padding:18px 20px; margin:0 0 12px; }
+  .card b { display:block; color:var(--tx); margin-bottom:4px; font-weight:600; }
+  .card span { color:var(--tx2); font-size:15px; }
+  footer { margin-top:64px; padding-top:24px; border-top:1px solid var(--line);
+           color:var(--tx3); font-size:14px; }
+  footer a { color:var(--tx3); }
+</style>
+</head>
+<body>
+
+<div class="mark"><span class="dot"></span><b>Coaster</b></div>
+
+<h1>술이 아니라<br>자리를 기록합니다</h1>
+<p class="lead">
+  같은 술을 또 마셔도 자리가 다르면 새 기록입니다.
+  가게에서 병으로 시켜 넷이 나눠 마셨다면 내 몫만 계산합니다.
+</p>
+
+<h2>문의</h2>
+<p>
+  버그를 찾으셨거나 하고 싶은 말이 있으면 메일 주세요.
+  혼자 만드는 앱이라 답이 늦을 수 있습니다.
+</p>
+<p><a href="mailto:hello.min0704@gmail.com">hello.min0704@gmail.com</a></p>
+
+<h2>자주 묻는 것</h2>
+
+<div class="card">
+  <b>기록이 어디에 저장되나요</b>
+  <span>이 폰 안에만 저장됩니다. 계정도 로그인도 서버도 없습니다.
+  기록도 사진도 친구 이름도 밖으로 나가지 않습니다.</span>
+</div>
+
+<div class="card">
+  <b>폰을 바꾸면 기록이 사라지나요</b>
+  <span>서버가 없어서 그냥 두면 사라집니다.
+  설정 &gt; 백업과 복원 에서 파일로 저장해 두었다가 새 폰에서 복원하세요.
+  사진까지 통째로 묶입니다.</span>
+</div>
+
+<div class="card">
+  <b>점수는 어떻게 매겨지나요</b>
+  <span>직접 매기지 않습니다. 이미 기록한 자리와 몇 번 비교하면 점수가 나옵니다.
+  별 다섯 개를 주면 모두가 네 개를 주기 때문입니다.</span>
+</div>
+
+<div class="card">
+  <b>표준잔 기준을 바꿀 수 있나요</b>
+  <span>설정 &gt; 표준잔 기준 에서 바꿉니다.
+  기본값은 7g(보건복지부·한국건강증진개발원)이고 기관마다 다릅니다.</span>
+</div>
+
+<div class="card">
+  <b>기록을 다른 곳으로 옮길 수 있나요</b>
+  <span>설정 &gt; 백업과 복원 &gt; 기록만 내보내기 에서 JSON으로 뽑습니다.
+  표 프로그램에서 열립니다.</span>
+</div>
+
+<h2>개인정보</h2>
+<p>
+  Coaster는 개인정보를 수집하지 않습니다.
+  <a href="./privacy/">개인정보처리방침</a>
+</p>
+
+<footer>
+  Coaster &middot; <a href="https://bupyeonghealer.github.io/">Minseok Kim</a>
+</footer>
+
+</body>
+</html>
